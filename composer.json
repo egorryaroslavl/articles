@@ -1,0 +1,24 @@
+{
+  "name": "egorryaroslavl/articles",
+  "description": "Articles form",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "egorr",
+      "email": "yaroslavl.city@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "egorryaroslavl/admin": "1.*",
+    "laravelcollective/html": "^5.3.0",
+    "intervention/image": "^2.3",
+    "barryvdh/laravel-elfinder": "^0.3.8",
+    "arrilot/laravel-widgets": "^3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Egorryaroslavl\\Articles\\": "src/"
+    }
+  }
+}
