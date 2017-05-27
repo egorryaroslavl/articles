@@ -50,4 +50,4 @@ To create a Widget class we must use artisan command
 ```
 php artisan make:widget WidgetClassName
 ```
-# articles
+ 
