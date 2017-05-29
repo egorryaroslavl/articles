@@ -2,5 +2,11 @@
 
 
 	return [
-		'paginate' => 30
+		'paginate' => 30,
+		'menu' => 		[
+			'url'   => '/admin/articles',
+			'title' => 'Статьи',
+			'icon'  => 'fa fa-pencil',
+			'pages' => []
+		],
 	];
