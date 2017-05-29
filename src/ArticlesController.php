@@ -60,8 +60,6 @@
 		public function store( Request $request )
 		{
 
-			//	dd( $request->all() );
-
 			$v = \Validator::make( $request->all(), [
 				'name' => 'required|unique:articles|max:255',
 
@@ -76,8 +74,8 @@
 			}
 
 			$input            = $request->all();
-			$input[ 'alias' ] = str_slug( $input[ 'name' ] );
 			$input            = array_except( $input, '_token' );
+			$input['short_description']   = str_limit( trim( $input['short_description'] ), $strLimit, '...' );
 			$id               = ArticleModel::create( $input );
 
 
