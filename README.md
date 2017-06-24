@@ -44,10 +44,4 @@ And after all, run this...
 ```
 php artisan migrate
 ```
-
-
-To create a Widget class we must use artisan command
-```
-php artisan make:widget WidgetClassName
-```
  

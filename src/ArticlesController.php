@@ -59,7 +59,7 @@
 
 		public function store( Request $request )
 		{
-
+			$strLimit = config( 'admin.settings.text_limit.text_short_description.', 300 );
 			$v = \Validator::make( $request->all(), [
 				'name' => 'required|unique:articles|max:255',
 
